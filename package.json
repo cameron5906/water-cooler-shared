@@ -1,6 +1,6 @@
 {
   "name": "water-cooler-shared",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Shared typings and functions for Colleague Life",
   "repository": {
     "type": "git",
