@@ -1,11 +1,7 @@
 {
   "name": "water-cooler-shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shared typings and functions for Colleague Life",
-  "main": "dist/index.js",
-  "scripts": {
-    "postinstall": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cameron5906/water-cooler-shared.git"
