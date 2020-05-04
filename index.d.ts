@@ -1,4 +1,4 @@
-export namespace Payload {
+declare module "Payloads" {
     export interface CreateAccountFromInvitationPayload {
         invitationCode: string;
         name: string;
@@ -17,5 +17,21 @@ export namespace Payload {
             email: string;
             password: string;
         }
+    }
+}
+
+declare module "Responses" {
+    export interface CreateAccountFromInvitationResponse {
+        ok: boolean;
+        error?: string;
+    }
+
+    export interface CreateOrganizationResponse {
+        error?: string;
+        token?: string;
+    }
+
+    export interface InvitationCheckResponse {
+        valid: boolean;
     }
 }
