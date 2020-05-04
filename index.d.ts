@@ -1,13 +1,13 @@
 declare module "water-cooler-shared" {
     export namespace Payload {
-        export interface CreateAccountFromInvitationPayload {
+        interface CreateAccountFromInvitationPayload {
             invitationCode: string;
             name: string;
             email: string;
             password: string;
         }
 
-        export interface CreateOrganizationPayload {
+        interface CreateOrganizationPayload {
             name: string;
             domain: string;
             purpose: "work" | "friends" | "other";
@@ -22,17 +22,17 @@ declare module "water-cooler-shared" {
     }
 
     export namespace Response {
-        export interface CreateAccountFromInvitationResponse {
+        interface CreateAccountFromInvitationResponse {
             ok: boolean;
             error?: string;
         }
     
-        export interface CreateOrganizationResponse {
+        interface CreateOrganizationResponse {
             error?: string;
             token?: string;
         }
     
-        export interface InvitationCheckResponse {
+        interface InvitationCheckResponse {
             valid: boolean;
         }
     }
