@@ -1,3 +1,9 @@
+export interface AuthenticatePayload {
+    domain: string;
+    email: string;
+    password: string;
+}
+
 export interface CreateAccountFromInvitationPayload {
     invitationCode: string;
     name: string;
