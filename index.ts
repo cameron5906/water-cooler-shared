@@ -47,5 +47,5 @@ export interface InvitationInfoResponse {
     valid: boolean;
     organization?: string;
     invitedBy?: string;
-    email: string;
+    email?: string;
 }
