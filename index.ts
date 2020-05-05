@@ -26,10 +26,6 @@ export interface CreateOrganizationPayload {
     }
 }
 
-export interface InvitationCheckPayload {
-    code: string;
-}
-
 //Responses
 
 export interface AuthenticateResponse {
@@ -47,6 +43,9 @@ export interface CreateOrganizationResponse {
     token?: string;
 }
 
-export interface InvitationCheckResponse {
+export interface InvitationInfoResponse {
     valid: boolean;
+    organization?: string;
+    invitedBy?: string;
+    email: string;
 }
