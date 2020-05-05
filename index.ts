@@ -1,3 +1,5 @@
+//Payloads
+
 export interface AuthenticatePayload {
     domain: string;
     email: string;
@@ -28,6 +30,12 @@ export interface InvitationCheckPayload {
     code: string;
 }
 
+//Responses
+
+export interface AuthenticateResponse {
+    error?: string;
+    token?: string;
+}
 
 export interface CreateAccountFromInvitationResponse {
     ok: boolean;
