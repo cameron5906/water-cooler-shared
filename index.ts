@@ -26,6 +26,13 @@ export interface CreateOrganizationPayload {
     }
 }
 
+export interface UserSettingsPayload {
+    name?: string;
+    avatar?: any;
+    oldPassword?: string;
+    password?: string;
+}
+
 //Responses
 
 export interface AuthenticateResponse {
