@@ -64,5 +64,5 @@ export interface InvitationInfoResponse {
 
 export interface OperationResponse {
     ok: boolean;
-    errors: { [error: string]: string };
+    errors?: { [error: string]: string };
 }
