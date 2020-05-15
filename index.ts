@@ -33,6 +33,11 @@ export interface UserSettingsPayload {
     password?: string;
 }
 
+export interface InvitePayload {
+    input: string;
+    channel: string;
+}
+
 //Responses
 
 export interface AuthenticateResponse {
