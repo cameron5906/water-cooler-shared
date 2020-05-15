@@ -61,3 +61,8 @@ export interface InvitationInfoResponse {
     invitedBy?: string;
     email?: string;
 }
+
+export interface OperationResponse {
+    ok: boolean;
+    errors: { [error: string]: string };
+}
