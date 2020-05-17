@@ -67,4 +67,4 @@ export interface OperationResponse {
     data?: any;
     errorMessage?: string;
     errors?: { [error: string]: string };
-}
+} 
